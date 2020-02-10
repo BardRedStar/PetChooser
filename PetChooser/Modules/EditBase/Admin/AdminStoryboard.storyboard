@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zH2-Dl-IIH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Admin View Controller-->
+        <scene sceneID="Z7d-4h-vys">
+            <objects>
+                <viewController storyboardIdentifier="AdminViewController" id="zH2-Dl-IIH" customClass="AdminViewController" customModule="PetChooser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O6b-BJ-Ods">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hjy-Zr-4Jn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB0-YS-fTg">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Pets" image="hare" catalog="system" id="IFS-Wl-rGd"/>
+                                    <tabBarItem title="Questions" image="questionmark" catalog="system" id="XS1-Af-yx8"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aB0-YS-fTg" firstAttribute="leading" secondItem="IKM-EB-CI9" secondAttribute="leading" id="A2a-sp-FGf"/>
+                            <constraint firstItem="aB0-YS-fTg" firstAttribute="trailing" secondItem="IKM-EB-CI9" secondAttribute="trailing" id="AP0-3B-ZiN"/>
+                            <constraint firstItem="hjy-Zr-4Jn" firstAttribute="leading" secondItem="IKM-EB-CI9" secondAttribute="leading" id="QUu-Hn-1cV"/>
+                            <constraint firstItem="aB0-YS-fTg" firstAttribute="top" secondItem="hjy-Zr-4Jn" secondAttribute="bottom" id="ebk-P7-txC"/>
+                            <constraint firstItem="aB0-YS-fTg" firstAttribute="bottom" secondItem="IKM-EB-CI9" secondAttribute="bottom" id="ky3-e4-90f"/>
+                            <constraint firstItem="IKM-EB-CI9" firstAttribute="trailing" secondItem="hjy-Zr-4Jn" secondAttribute="trailing" id="mg6-UM-fb7"/>
+                            <constraint firstItem="hjy-Zr-4Jn" firstAttribute="top" secondItem="IKM-EB-CI9" secondAttribute="top" id="zpH-Ms-hQa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IKM-EB-CI9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OQg-UC-taQ"/>
+                    <connections>
+                        <outlet property="tabBar" destination="aB0-YS-fTg" id="GWa-Wl-8C4"/>
+                        <outlet property="tableView" destination="hjy-Zr-4Jn" id="v4M-AD-bfA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1S-WR-avX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-554" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hare" catalog="system" width="64" height="46"/>
+        <image name="questionmark" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

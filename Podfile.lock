@@ -1,0 +1,24 @@
+PODS:
+  - Cartography (4.0.0)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+
+DEPENDENCIES:
+  - Cartography
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - Cartography
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+
+PODFILE CHECKSUM: 0fe000d500aef830e844f2ed09100efee138bb61
+
+COCOAPODS: 1.8.4

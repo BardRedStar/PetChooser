@@ -3,25 +3,89 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B58AF70E78DBD6289E3488 /* Pods_PetChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB525DF777D1E46C5E8343F /* Pods_PetChooser.framework */; };
+		CE0C076E23A08D4E00DB31F9 /* EntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C076D23A08D4E00DB31F9 /* EntityViewModel.swift */; };
+		CE0C077023A0971800DB31F9 /* EntityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C076F23A0971800DB31F9 /* EntityTableViewCell.swift */; };
+		CE0C077423A09FFD00DB31F9 /* EntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C077323A09FFD00DB31F9 /* EntityViewController.swift */; };
+		CE0C077623A0A03D00DB31F9 /* EntityControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C077523A0A03D00DB31F9 /* EntityControllerViewModel.swift */; };
+		CE0C077A23A0B1B900DB31F9 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C077923A0B1B900DB31F9 /* R.generated.swift */; };
+		CE0C077D23A0D6B600DB31F9 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C077C23A0D6B600DB31F9 /* AddPetViewController.swift */; };
+		CE2B0622239E4DDD0009F834 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B0621239E4DDD0009F834 /* CoreDataManager.swift */; };
+		CE36798D23A1E06A003BAFAD /* EntityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE36798C23A1E06A003BAFAD /* EntityTableViewCell.xib */; };
+		CE36799123A1EB3E003BAFAD /* AddPetControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36799023A1EB3E003BAFAD /* AddPetControllerViewModel.swift */; };
+		CE36799723A1F8B6003BAFAD /* AdminStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36799623A1F8B6003BAFAD /* AdminStoryboard.storyboard */; };
+		CE36799923A1F8CB003BAFAD /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36799823A1F8CB003BAFAD /* AdminViewController.swift */; };
+		CE36799B23A1F902003BAFAD /* AdminControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36799A23A1F902003BAFAD /* AdminControllerViewModel.swift */; };
+		CE36799F23A21A48003BAFAD /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36799E23A21A48003BAFAD /* ShowViewController.swift */; };
+		CE3679A123A21A53003BAFAD /* ShowControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3679A023A21A53003BAFAD /* ShowControllerViewModel.swift */; };
+		CE3679A323A21A98003BAFAD /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3679A223A21A98003BAFAD /* ContentType.swift */; };
+		CE3679A723A2213D003BAFAD /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3679A623A2213D003BAFAD /* AddQuestionViewController.swift */; };
+		CE3679A923A22149003BAFAD /* AddQuestionControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3679A823A22149003BAFAD /* AddQuestionControllerViewModel.swift */; };
+		CE49F08F23A739BD006E95DB /* Pet+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F08E23A739BD006E95DB /* Pet+Extension.swift */; };
+		CE49F09123A73A79006E95DB /* Question+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F09023A73A79006E95DB /* Question+Extension.swift */; };
+		CE49F09323A73B01006E95DB /* Probability+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49F09223A73B01006E95DB /* Probability+Extension.swift */; };
+		CE77309223C5CBF200ED476C /* ResultControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77309123C5CBF200ED476C /* ResultControllerViewModel.swift */; };
+		CE77309423C5CD8800ED476C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77309323C5CD8800ED476C /* ResultViewController.swift */; };
+		CE77EEA523A875B100A2C226 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77EEA423A875B100A2C226 /* PaddingLabel.swift */; };
+		CE77EEA723A878EC00A2C226 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77EEA623A878EC00A2C226 /* AnswerTableViewCell.swift */; };
+		CE77EEA923A87E6A00A2C226 /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77EEA823A87E6A00A2C226 /* QuestionCollectionViewCell.swift */; };
+		CE77EEAB23A87E7500A2C226 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE77EEAA23A87E7500A2C226 /* QuestionViewModel.swift */; };
+		CE93F0A123A753330064A258 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93F0A023A753330064A258 /* MainViewController.swift */; };
+		CE93F0A423A7533E0064A258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE93F0A223A7533E0064A258 /* Main.storyboard */; };
+		CE93F0A623A757460064A258 /* MainControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93F0A523A757460064A258 /* MainControllerViewModel.swift */; };
 		CEAB4424239A39C0009B6BFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB4423239A39C0009B6BFF /* AppDelegate.swift */; };
 		CEAB4426239A39C0009B6BFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB4425239A39C0009B6BFF /* SceneDelegate.swift */; };
-		CEAB4428239A39C0009B6BFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB4427239A39C0009B6BFF /* ViewController.swift */; };
-		CEAB442B239A39C0009B6BFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAB4429239A39C0009B6BFF /* Main.storyboard */; };
 		CEAB442E239A39C0009B6BFF /* PetChooser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEAB442C239A39C0009B6BFF /* PetChooser.xcdatamodeld */; };
 		CEAB4430239A39C5009B6BFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB442F239A39C5009B6BFF /* Assets.xcassets */; };
 		CEAB4433239A39C5009B6BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAB4431239A39C5009B6BFF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075307416F3C1F2988BC3213 /* Pods-PetChooser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetChooser.debug.xcconfig"; path = "Target Support Files/Pods-PetChooser/Pods-PetChooser.debug.xcconfig"; sourceTree = "<group>"; };
+		4585C2FD5CF7742F930A073F /* Pods-PetChooser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetChooser.release.xcconfig"; path = "Target Support Files/Pods-PetChooser/Pods-PetChooser.release.xcconfig"; sourceTree = "<group>"; };
+		7DB525DF777D1E46C5E8343F /* Pods_PetChooser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetChooser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C076D23A08D4E00DB31F9 /* EntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewModel.swift; sourceTree = "<group>"; };
+		CE0C076F23A0971800DB31F9 /* EntityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityTableViewCell.swift; sourceTree = "<group>"; };
+		CE0C077323A09FFD00DB31F9 /* EntityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityViewController.swift; sourceTree = "<group>"; };
+		CE0C077523A0A03D00DB31F9 /* EntityControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityControllerViewModel.swift; sourceTree = "<group>"; };
+		CE0C077923A0B1B900DB31F9 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CE0C077C23A0D6B600DB31F9 /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		CE2B060C239E44860009F834 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		CE2B060D239E44860009F834 /* Pet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE2B060E239E44860009F834 /* Probability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Probability.swift; sourceTree = "<group>"; };
+		CE2B060F239E44860009F834 /* Probability+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Probability+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE2B0610239E44860009F834 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CE2B0611239E44860009F834 /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE2B0621239E4DDD0009F834 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CE36798C23A1E06A003BAFAD /* EntityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntityTableViewCell.xib; sourceTree = "<group>"; };
+		CE36799023A1EB3E003BAFAD /* AddPetControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetControllerViewModel.swift; sourceTree = "<group>"; };
+		CE36799623A1F8B6003BAFAD /* AdminStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminStoryboard.storyboard; sourceTree = "<group>"; };
+		CE36799823A1F8CB003BAFAD /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		CE36799A23A1F902003BAFAD /* AdminControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminControllerViewModel.swift; sourceTree = "<group>"; };
+		CE36799E23A21A48003BAFAD /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		CE3679A023A21A53003BAFAD /* ShowControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowControllerViewModel.swift; sourceTree = "<group>"; };
+		CE3679A223A21A98003BAFAD /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		CE3679A623A2213D003BAFAD /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		CE3679A823A22149003BAFAD /* AddQuestionControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionControllerViewModel.swift; sourceTree = "<group>"; };
+		CE49F08E23A739BD006E95DB /* Pet+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pet+Extension.swift"; sourceTree = "<group>"; };
+		CE49F09023A73A79006E95DB /* Question+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+Extension.swift"; sourceTree = "<group>"; };
+		CE49F09223A73B01006E95DB /* Probability+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Probability+Extension.swift"; sourceTree = "<group>"; };
+		CE77309123C5CBF200ED476C /* ResultControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultControllerViewModel.swift; sourceTree = "<group>"; };
+		CE77309323C5CD8800ED476C /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CE77EEA423A875B100A2C226 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		CE77EEA623A878EC00A2C226 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		CE77EEA823A87E6A00A2C226 /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE77EEAA23A87E7500A2C226 /* QuestionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		CE93F0A023A753330064A258 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE93F0A323A7533E0064A258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE93F0A523A757460064A258 /* MainControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerViewModel.swift; sourceTree = "<group>"; };
 		CEAB4420239A39C0009B6BFF /* PetChooser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetChooser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB4423239A39C0009B6BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB4425239A39C0009B6BFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEAB4427239A39C0009B6BFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEAB442A239A39C0009B6BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEAB442D239A39C0009B6BFF /* PetChooser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetChooser.xcdatamodel; sourceTree = "<group>"; };
 		CEAB442F239A39C5009B6BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAB4432239A39C5009B6BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,17 +97,195 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B58AF70E78DBD6289E3488 /* Pods_PetChooser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A736143675BBB2EAB7B8F09D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DB525DF777D1E46C5E8343F /* Pods_PetChooser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCA6CE0931057D5D4378FFF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				075307416F3C1F2988BC3213 /* Pods-PetChooser.debug.xcconfig */,
+				4585C2FD5CF7742F930A073F /* Pods-PetChooser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE0C076C23A08D3B00DB31F9 /* EntityTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C076F23A0971800DB31F9 /* EntityTableViewCell.swift */,
+				CE0C076D23A08D4E00DB31F9 /* EntityViewModel.swift */,
+				CE36798C23A1E06A003BAFAD /* EntityTableViewCell.xib */,
+			);
+			path = EntityTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE0C077B23A0D69500DB31F9 /* AddPet */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C077C23A0D6B600DB31F9 /* AddPetViewController.swift */,
+				CE36799023A1EB3E003BAFAD /* AddPetControllerViewModel.swift */,
+			);
+			path = AddPet;
+			sourceTree = "<group>";
+		};
+		CE2B060B239E44660009F834 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE49F08D23A739AD006E95DB /* Extensions */,
+				CE2B0620239E4DBF0009F834 /* Models */,
+				CE2B0621239E4DDD0009F834 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CE2B0618239E4B890009F834 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE77308C23C5B26200ED476C /* Results */,
+				CE2B061A239E4BA80009F834 /* Survey */,
+				CE2B0619239E4B980009F834 /* EditBase */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE2B0619239E4B980009F834 /* EditBase */ = {
+			isa = PBXGroup;
+			children = (
+				CE36799D23A21612003BAFAD /* Show */,
+				CE36799523A1F8A2003BAFAD /* Admin */,
+				CE3679A523A22114003BAFAD /* AddQuestion */,
+				CE0C077B23A0D69500DB31F9 /* AddPet */,
+				CE2B061B239E4BAF0009F834 /* BaseAddController */,
+			);
+			path = EditBase;
+			sourceTree = "<group>";
+		};
+		CE2B061A239E4BA80009F834 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				CE93F0A923A761560064A258 /* Question */,
+				CE93F0A223A7533E0064A258 /* Main.storyboard */,
+				CE93F0A023A753330064A258 /* MainViewController.swift */,
+				CE93F0A523A757460064A258 /* MainControllerViewModel.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		CE2B061B239E4BAF0009F834 /* BaseAddController */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C076C23A08D3B00DB31F9 /* EntityTableViewCell */,
+				CE0C077323A09FFD00DB31F9 /* EntityViewController.swift */,
+				CE0C077523A0A03D00DB31F9 /* EntityControllerViewModel.swift */,
+			);
+			path = BaseAddController;
+			sourceTree = "<group>";
+		};
+		CE2B0620239E4DBF0009F834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B060C239E44860009F834 /* Pet.swift */,
+				CE2B0610239E44860009F834 /* Question.swift */,
+				CE2B060E239E44860009F834 /* Probability.swift */,
+				CE2B060D239E44860009F834 /* Pet+CoreDataProperties.swift */,
+				CE2B0611239E44860009F834 /* Question+CoreDataProperties.swift */,
+				CE2B060F239E44860009F834 /* Probability+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE36799523A1F8A2003BAFAD /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				CE36799623A1F8B6003BAFAD /* AdminStoryboard.storyboard */,
+				CE36799823A1F8CB003BAFAD /* AdminViewController.swift */,
+				CE36799A23A1F902003BAFAD /* AdminControllerViewModel.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		CE36799D23A21612003BAFAD /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				CE36799E23A21A48003BAFAD /* ShowViewController.swift */,
+				CE3679A023A21A53003BAFAD /* ShowControllerViewModel.swift */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		CE3679A423A21AA6003BAFAD /* Global Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE3679A223A21A98003BAFAD /* ContentType.swift */,
+			);
+			path = "Global Models";
+			sourceTree = "<group>";
+		};
+		CE3679A523A22114003BAFAD /* AddQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				CE3679A623A2213D003BAFAD /* AddQuestionViewController.swift */,
+				CE3679A823A22149003BAFAD /* AddQuestionControllerViewModel.swift */,
+			);
+			path = AddQuestion;
+			sourceTree = "<group>";
+		};
+		CE49F08D23A739AD006E95DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE49F08E23A739BD006E95DB /* Pet+Extension.swift */,
+				CE49F09023A73A79006E95DB /* Question+Extension.swift */,
+				CE49F09223A73B01006E95DB /* Probability+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE77308C23C5B26200ED476C /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				CE77309323C5CD8800ED476C /* ResultViewController.swift */,
+				CE77309123C5CBF200ED476C /* ResultControllerViewModel.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		CE77EEA323A8759A00A2C226 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				CE77EEA423A875B100A2C226 /* PaddingLabel.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		CE93F0A923A761560064A258 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				CE77EEAA23A87E7500A2C226 /* QuestionViewModel.swift */,
+				CE77EEA623A878EC00A2C226 /* AnswerTableViewCell.swift */,
+				CE77EEA823A87E6A00A2C226 /* QuestionCollectionViewCell.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
 		CEAB4417239A39C0009B6BFF = {
 			isa = PBXGroup;
 			children = (
 				CEAB4422239A39C0009B6BFF /* PetChooser */,
 				CEAB4421239A39C0009B6BFF /* Products */,
+				BCA6CE0931057D5D4378FFF1 /* Pods */,
+				A736143675BBB2EAB7B8F09D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +300,13 @@
 		CEAB4422239A39C0009B6BFF /* PetChooser */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C077923A0B1B900DB31F9 /* R.generated.swift */,
+				CE77EEA323A8759A00A2C226 /* UIComponents */,
+				CE3679A423A21AA6003BAFAD /* Global Models */,
+				CE2B0618239E4B890009F834 /* Modules */,
+				CE2B060B239E44660009F834 /* CoreData */,
 				CEAB4423239A39C0009B6BFF /* AppDelegate.swift */,
 				CEAB4425239A39C0009B6BFF /* SceneDelegate.swift */,
-				CEAB4427239A39C0009B6BFF /* ViewController.swift */,
-				CEAB4429239A39C0009B6BFF /* Main.storyboard */,
 				CEAB442F239A39C5009B6BFF /* Assets.xcassets */,
 				CEAB4431239A39C5009B6BFF /* LaunchScreen.storyboard */,
 				CEAB4434239A39C5009B6BFF /* Info.plist */,
@@ -77,9 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAB4437239A39C5009B6BFF /* Build configuration list for PBXNativeTarget "PetChooser" */;
 			buildPhases = (
+				1F44979F193E4C28FBFC6F81 /* [CP] Check Pods Manifest.lock */,
+				CE0C077823A0A2B300DB31F9 /* RSwift */,
 				CEAB441C239A39C0009B6BFF /* Sources */,
 				CEAB441D239A39C0009B6BFF /* Frameworks */,
 				CEAB441E239A39C0009B6BFF /* Resources */,
+				5F166DC586C32D34630CD858 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +362,8 @@
 				Base,
 			);
 			mainGroup = CEAB4417239A39C0009B6BFF;
+			packageReferences = (
+			);
 			productRefGroup = CEAB4421239A39C0009B6BFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,32 +379,121 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB4433239A39C5009B6BFF /* LaunchScreen.storyboard in Resources */,
+				CE93F0A423A7533E0064A258 /* Main.storyboard in Resources */,
+				CE36798D23A1E06A003BAFAD /* EntityTableViewCell.xib in Resources */,
 				CEAB4430239A39C5009B6BFF /* Assets.xcassets in Resources */,
-				CEAB442B239A39C0009B6BFF /* Main.storyboard in Resources */,
+				CE36799723A1F8B6003BAFAD /* AdminStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F44979F193E4C28FBFC6F81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetChooser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F166DC586C32D34630CD858 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetChooser/Pods-PetChooser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetChooser/Pods-PetChooser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetChooser/Pods-PetChooser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE0C077823A0A2B300DB31F9 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEAB441C239A39C0009B6BFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAB4428239A39C0009B6BFF /* ViewController.swift in Sources */,
+				CE0C077623A0A03D00DB31F9 /* EntityControllerViewModel.swift in Sources */,
+				CE93F0A123A753330064A258 /* MainViewController.swift in Sources */,
+				CE77309423C5CD8800ED476C /* ResultViewController.swift in Sources */,
+				CE0C077D23A0D6B600DB31F9 /* AddPetViewController.swift in Sources */,
+				CE77309223C5CBF200ED476C /* ResultControllerViewModel.swift in Sources */,
+				CE3679A723A2213D003BAFAD /* AddQuestionViewController.swift in Sources */,
+				CE77EEA923A87E6A00A2C226 /* QuestionCollectionViewCell.swift in Sources */,
+				CE77EEA723A878EC00A2C226 /* AnswerTableViewCell.swift in Sources */,
+				CE36799B23A1F902003BAFAD /* AdminControllerViewModel.swift in Sources */,
+				CE77EEAB23A87E7500A2C226 /* QuestionViewModel.swift in Sources */,
 				CEAB4424239A39C0009B6BFF /* AppDelegate.swift in Sources */,
+				CE36799F23A21A48003BAFAD /* ShowViewController.swift in Sources */,
+				CE0C077023A0971800DB31F9 /* EntityTableViewCell.swift in Sources */,
+				CE77EEA523A875B100A2C226 /* PaddingLabel.swift in Sources */,
 				CEAB4426239A39C0009B6BFF /* SceneDelegate.swift in Sources */,
+				CE2B0622239E4DDD0009F834 /* CoreDataManager.swift in Sources */,
+				CE3679A123A21A53003BAFAD /* ShowControllerViewModel.swift in Sources */,
+				CE49F09123A73A79006E95DB /* Question+Extension.swift in Sources */,
+				CE3679A923A22149003BAFAD /* AddQuestionControllerViewModel.swift in Sources */,
 				CEAB442E239A39C0009B6BFF /* PetChooser.xcdatamodeld in Sources */,
+				CE36799923A1F8CB003BAFAD /* AdminViewController.swift in Sources */,
+				CE36799123A1EB3E003BAFAD /* AddPetControllerViewModel.swift in Sources */,
+				CE0C077A23A0B1B900DB31F9 /* R.generated.swift in Sources */,
+				CE0C076E23A08D4E00DB31F9 /* EntityViewModel.swift in Sources */,
+				CE0C077423A09FFD00DB31F9 /* EntityViewController.swift in Sources */,
+				CE49F09323A73B01006E95DB /* Probability+Extension.swift in Sources */,
+				CE3679A323A21A98003BAFAD /* ContentType.swift in Sources */,
+				CE93F0A623A757460064A258 /* MainControllerViewModel.swift in Sources */,
+				CE49F08F23A739BD006E95DB /* Pet+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEAB4429239A39C0009B6BFF /* Main.storyboard */ = {
+		CE93F0A223A7533E0064A258 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CEAB442A239A39C0009B6BFF /* Base */,
+				CE93F0A323A7533E0064A258 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -286,6 +625,7 @@
 		};
 		CEAB4438239A39C5009B6BFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075307416F3C1F2988BC3213 /* Pods-PetChooser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +644,7 @@
 		};
 		CEAB4439239A39C5009B6BFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4585C2FD5CF7742F930A073F /* Pods-PetChooser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
